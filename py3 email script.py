@@ -12,6 +12,7 @@ import logging
 def send_email_with_attachments_by_date(smtp_server, port, sender_email, password, subject, body, recipient_emails, source_folder):
     try:
         # Record start time
+        #changes made
         start_time = time.time()
         timestamp = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
         sent_files_folder = 'sent_files'  # Folder to store sent files
